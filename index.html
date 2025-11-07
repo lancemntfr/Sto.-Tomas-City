@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sto. Tomas City</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .hero {
+            background: url("assets/image/Sto.-Tomas-Homepage2.png") no-repeat center top;
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+            min-height: 120vh;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .font-70 {
+            font-size: 70pt;
+            font-weight: bold;
+            line-height: 0.9;
+        }
+
+        .font-50 {
+            font-size: 45pt;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .text-pop {
+            text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #carousel-indicator .carousel-item {
+            height: 300px;
+        }
+
+        #carousel-indicator .carousel-item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: bottom center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <nav class="row">
+                <div class="col my-5 text-center">
+                    <a href="index.html" class="me-4">HOME</a>
+                    <a href="#about" class="me-4">ABOUT</a>
+                    <a href="#attractions" class="me-4">ATTRACTIONS</a>
+                    <a href="#food-cafes" class="me-4">FOOD & CAFES</a>
+                    <a href="#contact" class="me-4">CONTACT</a>
+                </div>
+            </nav>
+
+            <section class="d-flex align-items-center" style="min-height: 80vh;">
+                <div class="row mt-5">
+                    <div class="col-12 col-md-6 p-5">
+                        <h1 class="font-70 text-light text-pop mb-5">
+                            <b>Sto. Tomas Travel Guide</b>
+                        </h1>
+                        <button type="button" class="glassmorphism text-light p-3 px-4 rounded-5"><b>GET STARTED
+                                🡭</b></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div class="container bg-light mt-5">
+
+            <section>
+                <div id="about" class="row mt-5 align-items-center">
+                    <div class="col-12 col-lg-7 p-5 text-center text-lg-start">
+                        <h1 class="font-50 text-dark mb-5">
+                            <b>DISCOVER<br>STO. TOMAS CITY</b>
+                        </h1>
+                        <p>Nestled at the foot of the majestic Mount Makiling, Sto. Tomas City is a charming blend
+                            of
+                            faith, nature, and modern progress. Known as the “Gateway to Batangas,” the city
+                            welcomes
+                            visitors with its unique mix of spirituality, culture, and local warmth — making it one
+                            of
+                            the most diverse and fast-developing destinations in Southern Luzon.</p>
+                    </div>
+                    <div class="col-12 col-lg-5 p-5">
+                        <div id="carousel-indicator" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel-indicator" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel-indicator" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel-indicator" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/image/city-hall.jpg" class="d-block w-100"
+                                        alt="Sto. Tomas City Hall overview">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/image/sto.-tomas-overview.webp" class="d-block w-100"
+                                        alt="Sto. Tomas overview of city">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/image/love-sto.-tomas.jpg" class="d-block w-100"
+                                        alt="I love Sto. Tomas statue">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicator"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-indicator"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div id="attractions" class="row g-3">
+                    <div class="col-12 col-lg-6 px-5 px-lg-0 ps-lg-5">
+                        <div class="card text-bg-dark me-lg-3 m-0">
+                            <img src="assets/image/thumbnail-historical.jpg" class="card-img"
+                                alt="Miguel Malvar statue">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title text-light text-pop"><b>SPIRITUAL & HISTORICAL PLACES</b></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-flex flex-column px-5 px-lg-0 pe-lg-5 gap-3">
+                        <div class="card text-bg-dark flex-fill">
+                            <img src="assets/image/thumbnail-nature.jpg" class="card-img"
+                                alt="Overview of Mt. Makiling">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title text-light text-pop"><b>NATURE EXPLORER</b>
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="card text-bg-dark flex-fill">
+                            <img src="assets/image/thumbnail-leisure.jpg" class="card-img" alt="">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title text-light text-pop"><b>LEISURE GUIDE</b>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="food-cafes" class="row mt-3 mb-5">
+                    <div class="col-12 px-5">
+                        <div class="card text-bg-dark">
+                            <img src="assets/image/thumbnail-cafes.jpg" class="card-img" alt="Outside of Dwenas Cafe">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title text-light text-pop"><b>FOOD & CAFE SPOTS</b>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contact" class="container-fluid bg-dark mt-5 text-light">
+            <div class="row">
+                <div class="col-12 mt-5 text-center">
+                    <p><i>“Sto. Tomas City, Batangas — where faith, nature, and progress meet. Discover scenic
+                            spots,<br>
+                            local flavors, and the warm hospitality of the Batangueños.”</i></p>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-12 col-md-6 ps-5 text-center text-md-start d-flex justify-content-center">
+                    <p>Address: Sto. Tomas City, Batangas, Philippines<br>
+                        Phone: +63 961 609 1738<br>
+                        Email: mendozalance246@gmail.com</p>
+                </div>
+                <div class="col-12 col-md-6 pe-5 d-flex justify-content-center">
+                    <a href="https://fb.com"><img src="assets/image/facebook.png" style="width: 50px; height: 50px;"></a>
+                    <a href="https://x.com"><img src="assets/image/twitter.jpg" style="width: 50px; height: 50px;"></a>
+                    <a href="https://instagram.com"><img src="assets/image/instagram.png" style="width: 50px; height: 50px;"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-3 text-center">
+                    <p>© 2025 Designed by <b><a href="https://github.com/lancemntfr">lancemntfr</a></b></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
