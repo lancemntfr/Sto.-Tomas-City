@@ -50,6 +50,7 @@
         }
 
         a {
+            font-size: clamp(12px, 3vw, 16px);
             text-decoration: none;
             color: white;
         }
@@ -113,7 +114,7 @@
             transition: 500ms;
         }
 
-        .card:hover img{
+        .card:hover img {
             filter: brightness(50%)
         }
     </style>
@@ -123,23 +124,28 @@
     <header class="hero">
         <div class="container">
             <nav class="row">
-                <div class="col my-5 text-center">
-                    <a href="index.html" class="me-4">HOME</a>
-                    <a href="#about" class="me-4">ABOUT</a>
-                    <a href="places.html#attractions" class="me-4">ATTRACTIONS</a>
-                    <a href="places.html#food-cafes" class="me-4">FOOD & CAFES</a>
-                    <a href="#contact" class="me-4">CONTACT</a>
+                <div class="col">
+                    <div class="my-5 mx-2 text-center">
+                        <a href="index.html" class="me-md-4 mx-2">HOME</a>
+                        <a href="#about" class="me-md-4 mx-2">ABOUT</a>
+                        <a href="places.html#attractions" class="me-md-4 mx-2">ATTRACTIONS</a>
+                        <a href="places.html#food-cafes" class="me-md-4 mx-2">FOOD & CAFES</a>
+                        <a href="#contact" class="me-md-4 mx-2">CONTACT</a>
+                    </div>
                 </div>
             </nav>
 
             <section class="d-flex align-items-center" style="min-height: 80vh;">
-                <div class="row mt-5">
-                    <div class="col-12 col-md-6 p-5">
-                        <h1 class="font-70 text-light text-pop mb-5">
-                            <b>Sto. Tomas Travel Guide</b>
-                        </h1>
-                        <button onclick="location.href='#about'" type="button" class="glassmorphism start-btn text-light p-3 px-4 rounded-5 text-pop"><b>GET STARTED
-                                🡭</b></button>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="mt-5 p-5">
+                            <h1 class="font-70 text-light text-pop mb-5">
+                                <b>Sto. Tomas Travel Guide</b>
+                            </h1>
+                            <button onclick="location.href='#about'" type="button"
+                                class="glassmorphism start-btn text-light p-3 px-4 rounded-5 text-pop"><b>GET STARTED
+                                    🡭</b></button>
+                        </div>
                     </div>
                 </div>
             </section>
