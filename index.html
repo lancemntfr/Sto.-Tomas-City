@@ -19,6 +19,7 @@
             background-position: top center;
             background-repeat: no-repeat;
             min-height: 120vh;
+            width: 100%;
             color: white;
             margin: 0;
             padding: 0;
@@ -34,13 +35,13 @@
         }
 
         .font-70 {
-            font-size: 70pt;
+            font-size: clamp(40px, 20vw, 90px);
             font-weight: bold;
             line-height: 0.9;
         }
 
         .font-50 {
-            font-size: 45pt;
+            font-size: clamp(20px, 10vw, 50px);
             font-weight: bold;
             line-height: 1;
         }
@@ -49,10 +50,24 @@
             text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
         }
 
+        .text-justify {
+            text-align: justify;
+        }
+
+        p {
+            font-size: clamp(14px, 4vw, 17px);
+        }
+
         a {
             font-size: clamp(12px, 3vw, 16px);
             text-decoration: none;
             color: white;
+        }
+
+        a:hover {
+            color: orange;
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
         }
 
         #carousel-indicator .carousel-item {
@@ -90,12 +105,6 @@
             height: 300px;
         }
 
-        a:hover {
-            color: orange;
-            text-decoration-line: underline;
-            text-decoration-style: dotted;
-        }
-
         .start-btn:hover {
             background-color: rgb(221, 154, 28);
             text-decoration-line: underline;
@@ -122,29 +131,32 @@
 
 <body>
     <header class="hero">
-        <div class="container">
-            <nav class="row">
-                <div class="col">
-                    <div class="my-5 mx-2 text-center">
-                        <a href="index.html" class="me-md-4 mx-2">HOME</a>
-                        <a href="#about" class="me-md-4 mx-2">ABOUT</a>
-                        <a href="places.html#attractions" class="me-md-4 mx-2">ATTRACTIONS</a>
-                        <a href="places.html#food-cafes" class="me-md-4 mx-2">FOOD & CAFES</a>
-                        <a href="#contact" class="me-md-4 mx-2">CONTACT</a>
+        <div class="container-fluid">
+            <nav>
+                <div class="row">
+                    <div class="col">
+                        <div class="my-5 mx-2 text-center">
+                            <a href="index.html" class="me-md-4 mx-2">HOME</a>
+                            <a href="#about" class="me-md-4 mx-2">ABOUT</a>
+                            <a href="places.html#attractions" class="me-md-4 mx-2">ATTRACTIONS</a>
+                            <a href="places.html#food-cafes" class="me-md-4 mx-2">FOOD & CAFES</a>
+                            <a href="#contact" class="me-md-4 mx-2">CONTACT</a>
+                        </div>
                     </div>
                 </div>
             </nav>
 
-            <section class="d-flex align-items-center" style="min-height: 80vh;">
+            <section class="d-flex align-items-center justify-content-center" style="min-height: 80vh;">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <div class="mt-5 p-5">
-                            <h1 class="font-70 text-light text-pop mb-5">
+                        <div class="mx-md-5 px-5 text-md-start text-center text-light text-pop">
+                            <h1 class="font-70">
                                 <b>Sto. Tomas Travel Guide</b>
                             </h1>
                             <button onclick="location.href='#about'" type="button"
-                                class="glassmorphism start-btn text-light p-3 px-4 rounded-5 text-pop"><b>GET STARTED
-                                    🡭</b></button>
+                                class="glassmorphism start-btn text-light pt-3 px-4 rounded-5 text-pop mt-4">
+                                <p><b>GET STARTED 🡭</b></p>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -156,20 +168,22 @@
         <div class="container bg-light mt-5">
             <section>
                 <div id="about" class="row mt-5 align-items-center">
-                    <div class="col-12 col-lg-7 p-lg-5 px-5 text-center text-lg-start mb-4">
-                        <h1 class="font-50 text-dark mb-3">
-                            <b>DISCOVER<br>STO. TOMAS CITY</b>
-                        </h1>
-                        <p>Nestled at the foot of the majestic Mount Makiling, Sto. Tomas City is a charming blend
-                            of
-                            faith, nature, and modern progress. Known as the “Gateway to Batangas,” the city
-                            welcomes
-                            visitors with its unique mix of spirituality, culture, and local warmth — making it one
-                            of
-                            the most diverse and fast-developing destinations in Southern Luzon.</p>
+                    <div class="col-12 col-lg-7">
+                        <div class="mb-4 px-md-5 text-start text-black">
+                            <h1 class="font-50 mb-3">
+                                <b>DISCOVER<br>STO. TOMAS CITY</b>
+                            </h1>
+                            <p class="text-justify">Nestled at the foot of the majestic Mount Makiling, Sto. Tomas City is a charming blend
+                                of
+                                faith, nature, and modern progress. Known as the “Gateway to Batangas,” the city
+                                welcomes
+                                visitors with its unique mix of spirituality, culture, and local warmth — making it one
+                                of
+                                the most diverse and fast-developing destinations in Southern Luzon.</p>
+                        </div>
                     </div>
                     <div class="col-12 col-lg-5">
-                        <div id="carousel-indicator" class="carousel slide px-5">
+                        <div id="carousel-indicator" class="carousel slide px-md-5">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carousel-indicator" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
