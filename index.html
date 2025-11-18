@@ -9,8 +9,11 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <style>
-        * {
+        html, body {
             font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
         }
 
         .hero {
@@ -94,7 +97,7 @@
         }
 
         .card-big {
-            height: 500px;
+            height: clamp(200px, 50vw, 450px);
         }
 
         .card-small {
@@ -102,7 +105,7 @@
         }
 
         .card-long {
-            height: 300px;
+            height: clamp(200px, 50vw, 300px);
         }
 
         @media (min-width: 769px) {
@@ -229,7 +232,7 @@
             <section>
                 <div class="row g-4 mt-5">
                     <div class="col-12 col-lg-6">
-                        <div onclick="location.href='places.html'" class="card card-big text-bg-dark h-lg-100 h-50">
+                        <div onclick="location.href='places.html'" class="card card-big text-bg-dark">
                             <img src="assets/image/thumbnail-historical.jpg" class="card-img"
                                 alt="Miguel Malvar statue">
                             <div class="card-img-overlay">
