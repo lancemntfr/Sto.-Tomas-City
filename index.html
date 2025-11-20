@@ -7,149 +7,21 @@
     <title>Sto. Tomas City</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <style>
-        html, body {
-            font-family: "Poppins", sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
-        .hero {
-            background: url("assets/image/Sto.-Tomas-Homepage2.png") no-repeat center top;
-            background-size: cover;
-            background-position: top center;
-            background-repeat: no-repeat;
-            min-height: 120vh;
-            width: 100%;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-
-        .glassmorphism {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .font-70 {
-            font-size: clamp(40px, 20vw, 90px);
-            font-weight: bold;
-            line-height: 0.9;
-        }
-
-        .font-50 {
-            font-size: clamp(20px, 10vw, 50px);
-            font-weight: bold;
-            line-height: 1;
-        }
-
-        .text-pop {
-            text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
-        }
-
-        .text-justify {
-            text-align: justify;
-        }
-
-        p {
-            font-size: clamp(14px, 4vw, 17px);
-        }
-
-        a {
-            font-size: clamp(12px, 3vw, 16px);
-            text-decoration: none;
-            color: white;
-        }
-
-        a:hover {
-            color: orange;
-            text-decoration-line: underline;
-            text-decoration-style: dotted;
-        }
-
-        #carousel-indicator .carousel-item {
-            height: 300px;
-        }
-
-        #carousel-indicator .carousel-item img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: bottom center;
-            border-radius: 10px;
-        }
-
-        .card {
-            cursor: pointer;
-        }
-
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 500ms;
-        }
-
-        .card-big {
-            height: clamp(200px, 50vw, 450px);
-        }
-
-        .card-small {
-            height: 200px;
-        }
-
-        .card-long {
-            height: clamp(200px, 50vw, 300px);
-        }
-
-        @media (min-width: 769px) {
-            .h-lg-100 {
-                height: 200px !important;
-            }
-        }
-
-        .start-btn:hover {
-            background-color: rgb(221, 154, 28);
-            text-decoration-line: underline;
-            text-decoration-style: dotted;
-            border-color: rgb(198, 150, 60);
-            box-shadow: rgba(255, 181, 43, 0.35) 0px 5px 15px;
-            transform: scale(1.05);
-            transition: 400ms;
-        }
-
-        .card:hover {
-            border-color: rgb(198, 150, 60);
-            box-shadow: rgba(255, 166, 0, 0.736) 0px 0px 40px 5px;
-            transform: scale(1.05);
-            transform: scale(1.03);
-            transition: 500ms;
-        }
-
-        .card:hover img {
-            filter: brightness(50%)
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header class="hero">
-        <div class="container-fluid">
+    <header>
+        <div class="container-fluid hero m-0 p-0">
             <nav>
                 <div class="row">
                     <div class="col">
                         <div class="my-5 mx-2 text-center">
-                            <a href="index.html" class="me-md-4 mx-2">HOME</a>
-                            <a href="#about" class="me-md-4 mx-2">ABOUT</a>
-                            <a href="places.html#attractions" class="me-md-4 mx-2">ATTRACTIONS</a>
-                            <a href="places.html#food-cafes" class="me-md-4 mx-2">FOOD & CAFES</a>
-                            <a href="#contact" class="me-md-4 mx-2">CONTACT</a>
+                            <a href="index.html" class="me-md-4 mx-2 text-white">HOME</a>
+                            <a href="#about" class="me-md-4 mx-2 text-white">ABOUT</a>
+                            <a href="places.html#attractions" class="me-md-4 mx-2 text-white">ATTRACTIONS</a>
+                            <a href="places.html#food-cafes" class="me-md-4 mx-2 text-white">FOOD & CAFES</a>
+                            <a href="#contact" class="me-md-4 mx-2 text-white">CONTACT</a>
                         </div>
                     </div>
                 </div>
@@ -178,7 +50,7 @@
             <section>
                 <div id="about" class="row mt-5 align-items-center">
                     <div class="col-12 col-lg-7">
-                        <div class="mb-4 px-md-5 text-start text-black">
+                        <div class="mb-4 px-md-5 text-start  text-white">
                             <h1 class="font-50 mb-3">
                                 <b>DISCOVER<br>STO. TOMAS CITY</b>
                             </h1>
@@ -299,7 +171,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 mb-sm-3 mt-md-0 mt-5 text-center">
+                <div class="col-12 mt-md-0 mt-5 text-center">
                     <p>© 2025 Designed by <b><a href="https://github.com/lancemntfr">lancemntfr</a></b></p>
                 </div>
             </div>

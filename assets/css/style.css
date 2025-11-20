@@ -1,0 +1,126 @@
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.hero {
+    background: url("../image/Sto.-Tomas-Homepage2.png") no-repeat center top;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 120vh;
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.font-70 {
+    font-size: clamp(40px, 20vw, 90px);
+    font-weight: bold;
+    line-height: 0.9;
+}
+
+.font-50 {
+    font-size: clamp(20px, 10vw, 50px);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.text-pop {
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+p {
+    font-size: clamp(14px, 4vw, 17px);
+}
+
+a {
+    font-size: clamp(12px, 3vw, 16px);
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange !important; 
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+#carousel-indicator .carousel-item {
+    height: 300px;
+}
+
+#carousel-indicator .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+    border-radius: 10px;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 500ms;
+}
+
+.card-big {
+    height: clamp(200px, 50vw, 450px);
+}
+
+.card-small {
+    height: 200px;
+}
+
+.card-long {
+    height: clamp(200px, 50vw, 300px);
+}
+
+@media (min-width: 769px) {
+    .h-lg-100 {
+        height: 200px !important;
+    }
+}
+
+.start-btn:hover {
+    background-color: rgb(221, 154, 28);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    border-color: rgb(198, 150, 60);
+    box-shadow: rgba(255, 181, 43, 0.35) 0px 5px 15px;
+    transform: scale(1.05);
+    transition: 400ms;
+}
+
+.card:hover {
+    border-color: rgb(198, 150, 60);
+    box-shadow: rgba(255, 166, 0, 0.736) 0px 0px 40px 5px;
+    transform: scale(1.05);
+    transform: scale(1.03);
+    transition: 500ms;
+}
+
+.card:hover img {
+    filter: brightness(50%)
+}
