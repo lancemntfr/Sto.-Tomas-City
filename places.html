@@ -14,12 +14,14 @@
     <header>
         <div class="container-fluid p-0 m-0">
             <nav class="row">
-                <div class="col my-5 text-center">
-                    <a href="index.html" class="me-4 text-black">HOME</a>
-                    <a href="index.html#about" class="me-4 text-black">ABOUT</a>
-                    <a href="#attractions" class="me-4 text-black">ATTRACTIONS</a>
-                    <a href="#food-cafes" class="me-4 text-black">FOOD & CAFES</a>
-                    <a href="#contact" class="me-4 text-black">CONTACT</a>
+                <div class="col">
+                    <div class="my-5 mx-2 text-center">
+                        <a href="index.html" class="me-4 text-black">HOME</a>
+                        <a href="index.html#about" class="me-4 text-black">ABOUT</a>
+                        <a href="#attractions" class="me-4 text-black">ATTRACTIONS</a>
+                        <a href="#food-cafes" class="me-4 text-black">FOOD & CAFES</a>
+                        <a href="#contact" class="me-4 text-black">CONTACT</a>
+                    </div>
                 </div>
             </nav>
             <section id="container-row" class="row">
@@ -34,14 +36,14 @@
         for (var i = 0; i < places.length; i++) {
             var cards = `
                         <div id="`+ places[i].id + `" class="col-12">
-                            <div class="card my-5 mx-auto shadow" style="width: 80vw;">
+                            <div class="card my-md-5 my-4 mx-auto shadow" style="width: 80vw;">
                                 <div class="row g-0">
                                     `;
 
             if (i % 2 === 1) {
                 cards += `
                                     <div class="col-md-6 col-12">
-                                        <img src="`+ places[i].img + `" class="img-fluid rounded-start" style="width: 100%; height: clamp(360px, 50svh ,390px); object-fit: cover;">
+                                        <img src="`+ places[i].img + `" class="rounded place-img">
                                     </div>
                                     <div class="col-md-6 col-12">
                                         <div class="card-body">
@@ -59,7 +61,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">
-                                        <img src="`+ places[i].img + `" class="img-fluid rounded-start" style="width: 100%; height: clamp(360px, 50svh ,390px); object-fit: cover;">
+                                        <img src="`+ places[i].img + `" class="rounded place-img">
                                     </div>
                                     `};
 

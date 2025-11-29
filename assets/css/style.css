@@ -7,7 +7,7 @@ body {
 }
 
 .hero {
-    background: url("../image/Sto.-Tomas-Homepage2.png") no-repeat center top;
+    background: url("../images/Sto.-Tomas-Homepage2.png") no-repeat center top;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -27,8 +27,8 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.font-70 {
-    font-size: clamp(40px, 20vw, 90px);
+.big-font {
+    font-size: clamp(50px, 15vw, 90px);
     font-weight: bold;
     line-height: 0.9;
 }
@@ -85,6 +85,10 @@ a:hover {
     transition: 500ms;
 }
 
+#card-filter {
+    filter: brightness(50%);
+}
+
 .card-big {
     height: clamp(200px, 50vw, 450px);
 }
@@ -104,7 +108,7 @@ a:hover {
 }
 
 .start-btn:hover {
-    background-color: rgb(221, 154, 28);
+    background-color: #FBA002;
     text-decoration-line: underline;
     text-decoration-style: dotted;
     border-color: rgb(198, 150, 60);
@@ -121,6 +125,15 @@ a:hover {
     transition: 500ms;
 }
 
-.card:hover img {
-    filter: brightness(50%)
+.place-img {
+    width: 100%;
+    height: 25vh;      /* small screens */
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width: 768px) {
+    .place-img {
+        height: 30vh;  /* md and bigger */
+    }
 }
